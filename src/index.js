@@ -4,11 +4,16 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Support from "./routes";
+import Privacy from "./routes/privacy";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Support />,
+  },
+  {
+    path: "/privacy",
+    element: <Privacy />,
   },
 ]);
 
